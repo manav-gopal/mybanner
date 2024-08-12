@@ -1,0 +1,44 @@
+/* ToggleButton.scss */
+
+$blue: #4285F4;
+$light-gray: #d3d3d3;
+$darker-gray: #a0a0a0;
+
+.toggle-button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.toggle-button {
+    padding: 10px 20px;
+    border: 2px solid transparent; /* Ensures border size remains consistent */
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    color: #ffffff;
+    background-color: $light-gray; /* Default background color */
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.toggle-button.on {
+    background-color: $blue;
+    border-color: $blue; /* Matches the button background color */
+}
+
+.toggle-button.off {
+    background-color: $light-gray;
+    border-color: $darker-gray; /* Matches the button background color for off state */
+    color: #333; /* Darker text color for visibility on light gray */
+}
+
+.toggle-button:hover {
+    opacity: 0.8; /* Slightly darker on hover */
+}
+
+.toggle-button:focus {
+    outline: none; /* Remove default focus outline */
+    box-shadow: 0 0 0 2px rgba($blue, 0.5); /* Add custom focus ring */
+}

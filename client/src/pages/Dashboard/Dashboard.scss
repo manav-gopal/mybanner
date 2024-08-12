@@ -1,0 +1,17 @@
+
+
+.dashboard{
+   text : black;
+    background-color: #e2e2e2b4;
+    .dashboard-banner{
+
+        .banner-info-edit{
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            .banner-form{
+                width: 70%;
+            }
+        }
+    }
+}
